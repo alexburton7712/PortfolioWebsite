@@ -1,18 +1,19 @@
 //this is a comment
 var i = 0
 var paragraph = document.getElementById("typed-text")
-var text = "hello. my name is alex burton."
+var text = "hello.my name is alex burton.welcome to my personal portfolio website."
 var speed = 75;
+
+function insertBreak() {
+  paragraph.innerHTML += '<br>';
+}
 
 function typeWriter() {
     if (i < text.length) {
-      if(i == 6) {
-        paragraph.innerHTML += '<br>';
-      }
-      else {
         paragraph.innerHTML += text.charAt(i);
-      }
- //       paragraph.innerHTML += '<span id="cursor"></span>'; // Add cursor
+        if(text.charAt(i) == '.' && i != text.length - 1) {
+          insertBreak();
+        }
         i++;
         setTimeout(typeWriter, speed);
       }

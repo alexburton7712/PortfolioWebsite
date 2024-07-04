@@ -1,35 +1,22 @@
 #typed-text {
-    font-family: monospace;
-    font-size: 25px;
-    color: rgb(180, 44, 44);
     text-align: left;
+}
+
+#paragraph {
+    text-align: right;
 }
 
 #about-me {
     /* background: linear-gradient(rgb(109, 24, 24), rgb(0, 0, 0)); Gradient */
     background: rgb(30, 30, 30);
     padding: 50px;
+    align-items: center;
+    display: flex;
 }
 
-.image {
-    align-self: right;
-    width: 100%; /* Set the width of the image */
-    height: auto; /* Maintain the aspect ratio */
-    border: 5px solid rgb(34, 34, 34); /* Add a border to the image */
-    border-radius: 55%; /* This makes the container and its contents circular */
-    margin: 10px; /* Add some space around the image */
-}
-
-#ascii-art {
-    line-height: 1;
-}
-
-#cursor {
-    display: inline-block;
-    width: 10px; /* Adjust width of cursor */
-    height: 25px; /* Adjust height of cursor */
-    background-color: rgb(180, 44, 44);
+body {
+    font-family: monospace;
+    font-size: 25px;
     color: rgb(180, 44, 44);
-    animation: animate 1.5s linear infinite;
-    margin-right: 5px; /* Space between cursor and text */
+    
 }

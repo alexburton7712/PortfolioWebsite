@@ -11,4 +11,4 @@ function typeWriter() {
       }
 }
 
-document.addEventListener('DOMContentLoaded', typeWriter())
+// document.addEventListener('DOMContentLoaded', typeWriter())

@@ -1,13 +1,13 @@
 #typed-text {
     font-family: monospace;
     font-size: 25px;
-    color: rgb(182, 68, 68);
+    color: rgb(180, 44, 44);
     text-align: left;
 }
 
 #about-me {
     /* background: linear-gradient(rgb(109, 24, 24), rgb(0, 0, 0)); Gradient */
-    background: rgb(44, 44, 44);
+    background: rgb(30, 30, 30);
     padding: 50px;
 }
 
@@ -28,8 +28,8 @@
     display: inline-block;
     width: 10px; /* Adjust width of cursor */
     height: 25px; /* Adjust height of cursor */
-    background-color: rgb(182, 68, 68);
-    color: rgb(182, 68, 68);
+    background-color: rgb(180, 44, 44);
+    color: rgb(180, 44, 44);
     animation: animate 1.5s linear infinite;
     margin-right: 5px; /* Space between cursor and text */
 }

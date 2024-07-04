@@ -10,6 +10,7 @@
     /* background: linear-gradient(rgb(109, 24, 24), rgb(0, 0, 0)); Gradient */
     background: rgb(30, 30, 30);
     padding: 50px;
+    justify-content: space-between;
     align-items: center;
     display: flex;
 }
@@ -19,4 +20,9 @@ body {
     font-size: 25px;
     color: rgb(180, 44, 44);
     
+}
+
+.right-text {
+    margin-left: auto; /* Pushes the text to the right */
+    /* Optional styling for right text */
 }

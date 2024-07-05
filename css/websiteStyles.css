@@ -1,9 +1,30 @@
+#typed-container {
+    display: inline-block;
+}
+
 #typed-text {
+    display: inline;
     text-align: left;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+#cursor {
+    display: inline-block;
+    font-weight: bold;
+    background-color: #ce2b2b;
 }
 
 #paragraph {
     text-align: right;
+}
+
+img {
+    max-width: 25%;
+    height: auto;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 

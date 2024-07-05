@@ -1,4 +1,4 @@
-//this is a comment
+
 var i = 0
 var paragraph = document.getElementById("typed-text")
 var text = "hello.my name is alex burton.welcome to my personal portfolio website."

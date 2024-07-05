@@ -8,7 +8,7 @@
 
 #about-me {
     /* background: linear-gradient(rgb(109, 24, 24), rgb(0, 0, 0)); Gradient */
-    background: rgb(30, 30, 30);
+    background: #232323;
     padding: 50px;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
 body {
     font-family: monospace;
     font-size: 25px;
-    color: rgb(180, 44, 44);
+    color: #ce2b2b;
     
 }
 

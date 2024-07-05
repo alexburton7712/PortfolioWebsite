@@ -6,20 +6,48 @@
     text-align: right;
 }
 
+
 #about-me {
-    /* background: linear-gradient(rgb(109, 24, 24), rgb(0, 0, 0)); Gradient */
-    background: #232323;
     padding: 50px;
     justify-content: space-between;
     align-items: center;
     display: flex;
+    position: relative;
 }
 
 body {
     font-family: monospace;
     font-size: 25px;
+    background: #232323;
     color: #ce2b2b;
     
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    flex: 1;
+}
+
+.navbar-link {
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
 }
 
 .right-text {

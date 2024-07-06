@@ -20,22 +20,21 @@ function typeWriter() {
       }
 }
 
-document.addEventListener('DOMContentLoaded', typeWriter())
+document.addEventListener('DOMContentLoaded', typeWriter());
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Get a reference to the fixed header element
-  var header = document.querySelector('.fixed-header');
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-  // Add an event listener for the scroll event
-  window.addEventListener('scroll', function() {
-      // Get the current scroll position
-      var scrollPosition = window.scrollY;
+  // Calculate a value between 0 and 1 based on scroll position
+  var scrollFraction = scrollTop / maxScroll;
 
-      // Change the background color of the header based on the scroll position
-      if (scrollPosition > 100) {
-          header.style.backgroundColor = 'darkblue';
-      } else {
-          header.style.backgroundColor = 'coral';
-      }
-  });
+  // Interpolate between white (255, 255, 255) and black (0, 0, 0)
+  var red = 255 - Math.floor(255 * scrollFraction);
+  var green = 255 - Math.floor(255 * scrollFraction);
+  var blue = 255 - Math.floor(255 * scrollFraction);
+
+  // Set the new background color
+  document.body.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
 });
+

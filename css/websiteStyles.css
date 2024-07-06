@@ -13,10 +13,12 @@
     display: inline-block;
     font-weight: bold;
     background-color: #ce2b2b;
+    margin-left: 5px;
 }
 
 #paragraph {
     text-align: right;
+    padding: 50px;
 }
 
 img {
@@ -41,7 +43,6 @@ body {
     font-size: 25px;
     background: #232323;
     color: #ce2b2b;
-    
 }
 
 .navbar {
@@ -53,6 +54,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    transition: color 0.3s ease;
 }
 
 .navbar-item {
@@ -68,10 +70,6 @@ body {
 }
 
 .navbar-link:hover {
-    background-color: #575757;
-}
-
-.right-text {
-    margin-left: auto; /* Pushes the text to the right */
-    /* Optional styling for right text */
+    background-color: #ce2b2b;
+    color: #232323;
 }

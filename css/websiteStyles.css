@@ -29,7 +29,6 @@ img {
     border-radius: 10px;
 }
 
-
 #home {
     padding: 50px;
     justify-content: space-between;
@@ -43,6 +42,7 @@ body {
     font-size: 25px;
     background: #232323;
     color: #ce2b2b;
+    height: 2000px;
 }
 
 .navbar {

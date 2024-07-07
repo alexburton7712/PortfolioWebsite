@@ -48,22 +48,27 @@ function rgbToString(rgb) {
 }
 
 var startColorHex = '#232323'; // Start color
-var endColorHex = '#ffffff'; // End color
+var endColorHex = '#ffffff'; // End color, white
 
 var startColorRgb = hexToRgb(startColorHex);
 var endColorRgb = hexToRgb(endColorHex);
 
 window.addEventListener('scroll', function() {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
   var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
   // Calculate a value between 0 and 1 based on scroll position
   var scrollFraction = scrollTop / maxScroll;
 
-  // Interpolate between black (0, 0, 0) and white (255, 255, 255)
-  var interpolatedColor = interpolateColor(startColorRgb, endColorRgb, scrollFraction);
+  // Interpolate between two colors
+  // var interpolatedColor = interpolateColor(startColorRgb, endColorRgb, scrollFraction);
 
-  // Set the new background color
-  document.body.style.backgroundColor = rgbToString(interpolatedColor);
+  // // Set the new background color
+  // document.body.style.backgroundColor = rgbToString(interpolatedColor);
+
+  var image = document.getElementById('headshot');
+  image.style.opacity = 1 - scrollFraction;
+  console.log("1-" + 1 - scrollFraction);
+  console.log("op" + image.style.opacity);
 });
 

@@ -21,7 +21,7 @@
     padding: 50px;
 }
 
-img {
+#headshot {
     max-width: 25%;
     height: auto;
     border: 2px solid #000;
@@ -42,7 +42,7 @@ body {
     font-size: 25px;
     background: #232323;
     color: #ce2b2b;
-    height: 2000px;
+    height: 1000px;
 }
 
 .navbar {

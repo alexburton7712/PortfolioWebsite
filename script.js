@@ -1,8 +1,8 @@
 
-var i = 0
-var paragraph = document.getElementById("typed-text")
+var i = 0;
+var paragraph = document.getElementById("typed-text");
 //using '~' as a line break character
-var text = "hello.~my name is alex burton.~i am a software engineer from ASU specializing in machine learning.~this is me ------>"
+var text = "machine learning engineer.~my name is alex burton.";
 var speed = 75;
 
 function insertBreak() {
@@ -68,7 +68,5 @@ window.addEventListener('scroll', function() {
 
   var image = document.getElementById('headshot');
   image.style.opacity = 1 - scrollFraction;
-  console.log("1-" + 1 - scrollFraction);
-  console.log("op" + image.style.opacity);
 });
 
